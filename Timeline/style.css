@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(214, 201, 201);
+}
+.education-timeline h1 {
+  color: #ff0000;
+  position: absolute;
+  top: 10px;
+  left: 44%;
+  font-size: 30px;
+  padding: 5px 15px;
+  letter-spacing: 0.2px;
+  background-color: #e5e2e2;
+}
+.timeline {
+  max-width: 1200px;
+  position: relative;
+  margin: 100px auto;
+  /* font-family: "Lato", sans-serif; */
+}
+.timeline-container {
+  padding: 10px 50px;
+  width: 50%;
+  position: relative;
+  /* background-color: #766565; */
+}
+.timeline-container-text-box {
+  padding: 20px 30px;
+  position: relative;
+  background-color: #e5e2e2;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.timeline-left-container {
+  left: 0%;
+}
+.timeline-right-container {
+  left: 50%;
+}
+.timeline-container img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  top: 10px;
+  right: -20px;
+  z-index: 10;
+  background-color: #f0ffff;
+}
+.timeline-right-container img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: " ";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #fff;
+  top: 0px;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+.container-left-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #e5e2e2;
+  right: -15px;
+}
+.container-right-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #e5e2e2;
+  left: -14.5px;
+}
+.timeline-container-text-box h2 {
+  font-weight: bolder;
+}
+.timeline-container-text-box small {
+  font-weight: bolder;
+  font-size: 15px;
+  color: rgb(40, 37, 37);
+}
+.timeline-container-text-box p {
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.timeline-container-text-box a {
+  margin-left: 160px;
+  color: #ff0000;
+  text-decoration: none;
+}
